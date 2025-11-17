@@ -1,3 +1,4 @@
+
 from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
@@ -9,4 +10,12 @@ ROLE_CHOICE = (
     (3, 'Patient')
 )
 
+
+from .DayWeek import DayWeek
+from .Rating import Rating
+from .Speciality import Speciality
+from .State import State
+from .City import City
+from .Neighborhood import Neighborhood
+from .Address import Address
 from .Profile import Profile
