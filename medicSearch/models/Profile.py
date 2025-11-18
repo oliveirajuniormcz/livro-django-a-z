@@ -9,6 +9,8 @@ class Profile(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     token = models.CharField(max_length=255, null=True, blank=True)
 
+    image = models.ImageField(null=True, blank=True)
+
     favorites = models.ManyToManyField(
         User, blank=True, related_name='favorites')
     specialities = models.ManyToManyField(
